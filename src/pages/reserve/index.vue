@@ -1,6 +1,6 @@
 <template>
 	<view class="content">
-		主页主页
+		预约
 	</view>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
 	<view class="content">
-		主页主页
+		我的页面
 	</view>
 </template>
 
