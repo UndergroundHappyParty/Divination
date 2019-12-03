@@ -1,10 +1,12 @@
 <template>
   <view class="context">
     <!-- <img class="img"> -->
-    <view class="img"></view>
+    <view >
+      <img class="img" :src="imgData.url">
+    </view>
     <p class="name">{{imgData.nameEn}}</p>
     <p class="name">{{imgData.nameZn}}</p>
-    <view class="cost">
+    <view class="cost" @click="handleCost">
       <img src="/static/buy.png" class="cost-img">
       <span>￥ {{imgData.cost}}</span>
     </view>
@@ -21,6 +23,11 @@ export default {
     imgData: {
       type: Object,
       default: ''
+    }
+  },
+  methods: {
+    handleCost() {
+      this.$emit('handleClick',this.imgData)
     }
   }
 }
@@ -41,7 +48,7 @@ export default {
   height: 800rpx;
   background-color: #505050;
   border: 4rpx solid #fff;
-	box-shadow: 4px 4px 10px black;
+	box-shadow: 0 0 16px rgba(0, 0, 0, 0.75);
   margin-bottom: 16rpx;
 }
 .name{
