@@ -25,7 +25,8 @@ import login from './plugins/login'
 </script>
 <style>
 	/*每个页面公共css */
+	@import url('./style/config');
 page{
-	background-color: #e2c044;
+	background-color: var(--base-color);
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
 	<view class="content">
 		<view v-if="reserveShow">
-			<reserve class="reserve" @cancle='reserveShow = false'></reserve>
+			<reserve class="reserve" @cancle='reserveShow = false' :dataImg='imgList[current]'></reserve>
 			<view class="bg-Color-gray"></view>
 		</view>
 		<img @click="handleLeft" v-show="current !== 0" src="/static/right.png" class="left-img">
