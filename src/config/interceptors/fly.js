@@ -1,5 +1,7 @@
 
 export function requestSuccessFunc (requestObj) {
+  let token = uni.getStorageSync('_token')
+  requestObj.headers['authorization'] = 'Bearer ' + token
   console.log('requestSuccess')
   return requestObj
 }

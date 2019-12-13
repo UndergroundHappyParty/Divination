@@ -3,7 +3,7 @@ import { requestSuccessFunc, requestFailFunc, responseSuccessFunc, responseFailF
 
 const fly = new Fly
 //设置基本路由
-fly.config.baseURL = 'http://yapi.demo.qunar.com/mock/31830'
+fly.config.baseURL = 'http://127.0.0.1:7001'
 //注入拦截器
 fly.interceptors.request.use(requestSuccessFunc, requestFailFunc)
 fly.interceptors.response.use(responseSuccessFunc, responseFailFunc)
