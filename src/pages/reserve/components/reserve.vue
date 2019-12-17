@@ -21,7 +21,7 @@
         </view>
       </view>
     </view>
-    <dataPick v-if ='isShowPick' class='data-pick'></dataPick>
+    <dataPick v-if ='isShowPick' class='data-pick' @cancle='isShowPick = false'></dataPick>
   </view>
 </template>
 <script>
